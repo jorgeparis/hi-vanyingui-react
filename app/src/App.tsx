@@ -4,22 +4,24 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Navbar } from "./Navbar";
 import { Carousel } from "./Carousel";
-import { Produtos } from "./Productos";
-import { Button } from "./Button";
 
 function App() {
-  const alunos = [
-
-    {id:1,name:'Jorge Paris',isAlive:true},
-    {id:2,name:'Jorge Paris',isAlive:true},
-    {id:3,name:'Jorge Paris',isAlive:true},
-  ];
   return (
-    <div className="container p-5 gap-10" style={{ background: "rede" }}>
-      <Navbar />
-      <Carousel />
-      <Produtos />
-      <Button alunos={alunos}/>
+    <div className="container p-5">
+      <div className="row mb-3">
+        <Navbar />
+      </div>
+      <div className="row">
+        <Carousel />
+      </div>
+      <div className="row">
+        <div className="col">
+          <h5>Categorias</h5>
+        </div>
+        <div className="col align-self-end">
+          <h3>Jorge</h3>
+        </div>
+      </div>
     </div>
   );
 }
