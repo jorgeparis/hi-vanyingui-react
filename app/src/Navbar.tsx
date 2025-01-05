@@ -1,15 +1,13 @@
 import "./Navbar.css";
 import companyLogo from "./static/logo.svg";
 export function Navbar() {
-
-    function handler(){
-
-        alert('I was Clicked')
-    }
+  function handler() {
+    alert("I was Clicked");
+  }
 
   return (
     <>
-      <div className="col nav-principal" style={{background:'white'}}>
+      <div className="col nav-principal" style={{ background: "white" }}>
         <nav className="navbar navbar-expand-sm bg-body-tertiary">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
@@ -66,7 +64,7 @@ export function Navbar() {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#"onClick={handler}>
+                      <a className="dropdown-item" href="#" onClick={handler}>
                         Something else here
                       </a>
                     </li>
