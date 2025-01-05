@@ -8,13 +8,17 @@ import { Carousel } from "./Carousel";
 function App() {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row mb-4">
         <Navbar />
       </div>
       <div className="row">
         <div className="col">
+          <Carousel/>
+          <h2>Categorias</h2>
         </div>
       </div>
+     
+ 
     </div>
   );
 }
