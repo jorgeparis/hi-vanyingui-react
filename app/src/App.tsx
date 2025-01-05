@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Navbar } from "./Navbar";
 import { Carousel } from "./Carousel";
+import Categorias from "./Categorias";
 
 function App() {
   return (
@@ -15,9 +16,11 @@ function App() {
         <div className="col">
           <Carousel/>
           <h2>Categorias</h2>
+          <Categorias/>
         </div>
       </div>
      
+
  
     </div>
   );
