@@ -2,7 +2,7 @@ import rice from "./static/2M-Embalagem.jpg";
 export function ProductosCategorias() {
   return (
     <>
-      <div className="container">
+      <div className="container row-gap-4">
         <div className="row">
           <div className="col">
             <div className="card position-relative" style={{ width: "18rem" }}>

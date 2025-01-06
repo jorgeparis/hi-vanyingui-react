@@ -11,7 +11,7 @@ import { ProductosCategorias } from "./Categorias";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row mb-4">
         <div className="col"> <Navbar /></div>
        
