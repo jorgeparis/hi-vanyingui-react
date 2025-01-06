@@ -1,50 +1,138 @@
-import React from "react";
-import Slider from "react-slick";
-
-function Categorias() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear"
-  };
+import rice from "./static/2M-Embalagem.jpg";
+export function ProductosCategorias() {
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        <div style={{border:'1px solid',width:'100px',height:'100px',backgroundColor:'red'}}>
-          <h3>1</h3>
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div className="card position-relative" style={{ width: "18rem" }}>
+              <div className="position-absolute">
+                <button type="button" className="btn btn-primary">
+                  Notifications <span className="badge badge-light">4</span>
+                </button>
+              </div>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>2</h3>
+        <div className="row">
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div className="card" style={{ width: "18rem" }}>
+              <img className="card-img-top" src={rice} alt="Card image cap" />
+              <div className="card-body">
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col">COL-5</div>
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-        <div>
-          <h3>9</h3>
-        </div>
-      </Slider>
-    </div>
+      </div>
+    </>
   );
 }
-
-export default Categorias;

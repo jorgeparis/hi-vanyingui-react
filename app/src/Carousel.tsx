@@ -16,36 +16,39 @@ export function Carousel() {
 
   return (
     <div
-      className="slider-container"
-      style={{ height: "50%", width: "100%", objectFit: "cover" }}
+      className="container slider-container"
+      style={{ height: "500px", width: "100%", objectFit: "cover",overflow:'hidden' }}
     >
-      <Slider {...settings}>
-        <div
-          className="container"
-          style={{ background: "red", overflow: "hidden" }}
-        >
-          <div className="row justify-content-center rounded mb-3">
-            <div className="col">
-              <img
-                src={main_image}
-                alt=""
-                style={{ height: "50%", width: "100%", objectFit: "cover" }}
-              />
+      <div className="row">
+        <div className="col">
+          <Slider {...settings}>
+            <div
+              className="container"
+            >
+              <div className="row justify-content-center rounded mb-3">
+                <div className="col">
+                  <img
+                    src={main_image}
+                    alt=""
+                    style={{ height: "auto", width: "100%", objectFit: "cover" }}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col">
-              <img
-                src={main_image}
-                alt=""
-                style={{ height: "50%", width: "100%", objectFit: "cover" }}
-              />
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col">
+                  <img
+                    src={main_image}
+                    alt=""
+                    style={{ height: "auto", width: "100%", objectFit: "cover" }}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          </Slider>
         </div>
-      </Slider>
+      </div>
     </div>
   );
 }
