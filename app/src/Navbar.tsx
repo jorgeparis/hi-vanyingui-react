@@ -9,9 +9,9 @@ export function Navbar() {
     <>
       <div className="col nav-principal" style={{ background: "white" }}>
         <nav className="navbar navbar-expand-sm bg-body-tertiary">
-          <div className="container-fluid">
+          <div className="container-sm">
             <a className="navbar-brand" href="#">
-              <img src={companyLogo} alt="" />
+              <img src={companyLogo} alt="" className="logo"/>
             </a>
             <button
               className="navbar-toggler"
@@ -33,49 +33,22 @@ export function Navbar() {
                   <a className="nav-link active" aria-current="page" href="#">
                     Home
                   </a>
+                  
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Link
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Produtos
                   </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#" onClick={handler}>
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#" onClick={handler}>
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#" onClick={handler}>
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
+                  
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true">
-                    Disabled
+                  <a className="nav-link active" aria-current="page" href="#">
+                    Servicos
                   </a>
+                  
                 </li>
               </ul>
+        
               <form className="d-flex" role="search">
                 <input
                   className="form-control me-2"
